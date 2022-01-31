@@ -74,7 +74,7 @@
 }
 .pricing--norbu .pricing__price {
 	font-size: 50px;
-    padding: 0.5em 0 0 0;
+    padding: 0.5em 0 0;
     font-weight: 600;
     position: relative;
     z-index: 100;
@@ -121,7 +121,7 @@
     color: #1b55e2;
     background: #c2d5ff;
     border: solid 1px #1b55e2;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -131,7 +131,7 @@
     color: #c2d5ff;
     background: #1b55e2;
     border-color: #1b55e2;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -140,7 +140,7 @@
 /* 
     Pricing
 */
-#pricingWrapper { padding: 2.3rem 0 2.3rem 0; }
+#pricingWrapper { padding: 2.3rem 0; }
 #pricingWrapper .stacked {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -175,9 +175,9 @@
     text-align: center;
     line-height: 6.25rem;
     font-size: 1.875rem;
-    -webkit-box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
-    -moz-box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    -webkit-box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
+    -moz-box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
     border-radius: 0.25rem;
     border: 2px solid #1b55e2;
     background: #fff;
@@ -251,14 +251,14 @@
 }
 .pricing-plan {
     flex: 1;
-    padding: 35px 35px;
+    padding: 35px;
     position: relative;
     color: #3b3f5c;
     border: 1px solid #e0e6ed;
     background-color: #fff
 }
 .pricing-plan:hover {
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
 }
 .pricing-plan:first-of-type {
     border-right: none;
@@ -366,7 +366,7 @@
 .pricing-plan.recommended {
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     padding: 35px;
-    margin: 6rem 0 0 0;
+    margin: 6rem 0 0;
 }
 .pricing-plan .recommended-badge {
     background-color: #1b55e2;

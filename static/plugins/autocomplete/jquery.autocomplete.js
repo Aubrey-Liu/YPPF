@@ -127,11 +127,11 @@
 
     function _lookupFilter(suggestion, originalQuery, queryLowerCase) {
         return suggestion.value.toLowerCase().indexOf(queryLowerCase) !== -1;
-    };
+    }
 
     function _transformResult(response) {
         return typeof response === 'string' ? $.parseJSON(response) : response;
-    };
+    }
 
     function _formatResult(suggestion, currentValue) {
         // Do not replace anything if the current value is empty
@@ -148,11 +148,11 @@
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/&lt;(\/?strong)&gt;/g, '<$1>');
-    };
+    }
 
     function _formatGroup(suggestion, category) {
         return '<div class="autocomplete-group">' + category + '</div>';
-    };
+    }
 
     Autocomplete.prototype = {
 

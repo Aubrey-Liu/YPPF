@@ -38,9 +38,9 @@ body {
     text-align: center;
     border-radius: 15px;
     border: 1px solid #e0e6ed;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
-    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
-    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0 1px 11px 0 rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0 1px 11px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0 1px 11px 0 rgba(0, 0, 0, 0.06);
 }
 .form-form .form-container .form-content h1 { font-size: 32px; color: #3b3f5c; }
 .form-form .form-container .form-content > p {
@@ -81,7 +81,7 @@ body {
 .form-form .form-form-wrap p.signup-link.recovery { margin-top: 0; }
 .form-form .form-form-wrap p.signup-link a { color: #1b55e2; border-bottom: 1px solid; }
 .form-form .form-form-wrap form .field-wrapper.input {
-    padding: 11px 0px 16px 0;
+    padding: 11px 0 16px;
     border-bottom: none;
     position: relative;
 }
@@ -178,7 +178,7 @@ body {
 .form-form .form-form-wrap form .division {
     text-align: center;
     font-size: 13px;
-    margin: 35px 0 38px 0;
+    margin: 35px 0 38px;
 }
 .form-form .form-form-wrap form .social { text-align: center; }
 .form-form .form-form-wrap form .social a {

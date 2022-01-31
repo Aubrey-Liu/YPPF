@@ -22,7 +22,7 @@
     background: #fff;
     box-shadow: none;
     border: 1px solid #e0e6ed;
-    box-shadow: 0px 3px 11px 0px rgba(31,45,61,.1);
+    box-shadow: 0 3px 11px 0 rgba(31,45,61,.1);
 }
 .popover-primary .arrow:after, .popover-primary .arrow:before { display: none; border-top-color: #1b55e2; }
 .popover-primary .popover-header {
@@ -68,7 +68,7 @@
     padding: 0;
     background: #000;
     border-radius: 2px;
-    left: 0px;
+    left: 0;
     top: 5px;
     height: 10px;
     width: 10px;
@@ -151,7 +151,7 @@ a.bg-primary:hover, a.bg-success:hover, a.bg-warning:hover, a.bg-danger:hover {
 #addEventsModal .modal-title {
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #3b3f5c;
 }
 #addEventsModal form { margin-top: 30px; }
@@ -286,9 +286,9 @@ td.fc-today.fc-state-highlight span {
     }
     .fc-toolbar .fc-right {
         float: none;
-        margin: 0 0 30px 0;
+        margin: 0 0 30px;
     }
     .fc-toolbar .fc-center {
-        margin: 0 0 30px 0;
+        margin: 0 0 30px;
     }
 }

@@ -7,9 +7,9 @@
     border-radius: 8px;
     border: none;
     background: #fff;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
 }
 .widget .widget-heading {
     margin-bottom: 15px;
@@ -17,7 +17,7 @@
 .widget h5 {
     font-weight: 700;
     font-size: 19px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-bottom: 0;
     color: #515365;
 }
@@ -36,7 +36,7 @@
     padding: 0;
     border-radius: 8px;
     height: 100%;
-        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0 1px 11px 0 rgba(0, 0, 0, 0.06);
 }
 .widget-two .widget-content {
     font-size: 17px;
@@ -150,7 +150,7 @@
     padding: 20px;
     border-radius: 8px;
     height: 100%;
-        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0 1px 11px 0 rgba(0, 0, 0, 0.06);
 }
 .widget-three .widget-heading {
     margin-bottom: 54px;
@@ -173,7 +173,7 @@
 }
 .widget-three .widget-content .w-icon {
     display: inline-block;
-    padding: 8px 8px;
+    padding: 8px;
     border-radius: 50%;
     display: inline-flex;
     align-self: center;
@@ -259,7 +259,7 @@
 .widget-chart-one .widget-heading .tabs li {
     display: inline-block;
     list-style: none;
-    padding: 0 0;
+    padding: 0;
 }
 .widget-chart-one .widget-heading .tabs a {
     font-size: 14px;
@@ -281,10 +281,10 @@
     padding: 0;
 }
 .widget.widget-chart-two .widget-heading {
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0;
 }
 .widget.widget-chart-two .widget-content {
-    padding: 0 0 20px 0;
+    padding: 0 0 20px;
 }
 .widget-chart-two .apexcharts-canvas {
     margin: 0 auto;
@@ -305,7 +305,7 @@
 }
 .widget-table-one .widget-content {}
 .widget-table-one .transactions-list {
-    padding: 12px 12px;
+    padding: 12px;
     border: 1px dashed #bfc9d4;
     border-radius: 6px;
     -webkit-transition: all 0.1s ease;
@@ -367,7 +367,7 @@
 }
 .widget-table-one .transactions-list .t-item .t-name h4 {
     font-size: 15px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -383,7 +383,7 @@
 .widget-table-one .transactions-list .t-item .t-rate p {
     margin-bottom: 0;
     font-size: 13px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }
 .widget-table-one .transactions-list .t-item .t-rate svg {
     width: 14px;
@@ -538,7 +538,7 @@
 
 .widget-account-invoice-one .invoice-box {}
 .widget-account-invoice-one .invoice-box .acc-total-info {
-    padding: 0 0;
+    padding: 0;
     margin-bottom: 18px;
     padding-bottom: 18px;
     border-bottom: 1px dashed #bfc9d4;
@@ -823,7 +823,7 @@
 }
 .widget-table-three .table > tbody > tr > td:first-child {
     border-top-left-radius: 6px;
-    padding: 10px 0px 10px 15px;
+    padding: 10px 0 10px 15px;
 }
 .widget-table-three .table > tbody > tr > td:first-child {
     border-bottom-left-radius: 6px;
@@ -971,7 +971,7 @@
     }
     .widget-table-two .table .td-content img {
         display: block;
-        margin: 0 auto 5px auto;
+        margin: 0 auto 5px;
     }
 
     /*
@@ -994,7 +994,7 @@
     }
     .widget-table-three .table .td-content img {
         display: block;
-        margin: 0 auto 5px auto;
+        margin: 0 auto 5px;
     }
 
 }

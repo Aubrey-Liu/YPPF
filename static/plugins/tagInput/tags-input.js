@@ -170,7 +170,7 @@
 
             var str = tags.input.value.trim(); 
 
-            if( !!(~[9 , 13 , 188].indexOf( e.keyCode ))  )
+            if( ~[9 , 13 , 188].indexOf( e.keyCode )  )
             {
                 tags.input.value = "";
                 if(str != "")

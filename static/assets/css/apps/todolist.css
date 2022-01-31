@@ -55,9 +55,9 @@
     margin-bottom: 10px;
     border-radius: 6px;
     background: #fff;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
 }
 .mail-overlay {
     display: none;
@@ -136,7 +136,7 @@
     font-weight: 700;
     color: #888ea8;
     border-radius: 0;
-    padding: 20px 0px 20px 15px;
+    padding: 20px 0 20px 15px;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
@@ -191,14 +191,14 @@
 .todo-inbox .search { display: flex; }
 .todo-inbox .search input {
     border: none;
-    padding: 12px 13px 12px 13px;
+    padding: 12px 13px;
     border-bottom: 1px solid #e0e6ed;
     background: transparent;
     border-radius: 0;
 }
 .todo-inbox .mail-menu {
     background: #fff;
-    margin: 7px 13px 7px 13px;
+    margin: 7px 13px;
     width: 25px;
     border-radius: 0;
     color: #515365;
@@ -208,7 +208,7 @@
 .todo-inbox .todo-item-inner { display: flex; }
 .todo-inbox .message-box {
     background: #fff;
-    padding: 0 0 5px 0;
+    padding: 0 0 5px;
 }
 .todo-box-scroll {
     position: relative;
@@ -225,10 +225,10 @@
 .todo-inbox .todo-item:not(:last-child) { border-bottom: 1px solid #e0e6ed; }
 .todo-inbox .todo-item.todo-task-trash { display: none; }
 .todo-inbox .todo-item.todo-task-trash.trash-show { display: block; }
-.todo-inbox .todo-item .todo-item-inner .n-chk { padding: 20px 10px 20px 10px; }
+.todo-inbox .todo-item .todo-item-inner .n-chk { padding: 20px 10px; }
 .todo-inbox .todo-item .todo-item-inner .todo-content {
     width: 100%;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
 }
 .todo-inbox .todo-item .todo-item-inner .todo-heading {
     font-size: 18px;
@@ -272,7 +272,7 @@
 }
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown {
     float: right;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
 }
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-toggle { font-size: 20px; }
 .todo-inbox .todo-item .todo-item-inner .priority-dropdown .dropdown-toggle.danger svg {
@@ -304,7 +304,7 @@
 .todo-inbox .todo-item.todo-task-trash .n-chk { display: none; }
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .todo-content {
     width: 100%;
-    padding: 20px 14px 20px 14px;
+    padding: 20px 14px;
 }
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .priority-dropdown .dropdown-menu { display: none; }
 .todo-inbox .todo-item.todo-task-trash .todo-item-inner .action-dropdown .dropdown-menu .edit { display: none; }
@@ -319,7 +319,7 @@
 }
 .todo-inbox .todo-item .todo-item-inner .action-dropdown {
     float: right;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
 }
 .todo-inbox .todo-item .todo-item-inner .action-dropdown .dropdown-toggle svg {
     width: 21px;
@@ -335,7 +335,7 @@
 .todo-inbox .todo-item.todo-task-done .todo-item-inner p.todo-text { text-decoration: line-through; }
 .modal-content {
     border: none;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
 }
 .modal-content svg.close {
     position: absolute;

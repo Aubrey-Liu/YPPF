@@ -39,7 +39,7 @@
     padding: 6px 27px 6px 15px;
     color: #d3d3d3;
     border: none;
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0 2px 4px rgba(126,142,177,0.12);
     width: 100%!important;
     background-color: #fff;
 }
@@ -67,7 +67,7 @@
     border-radius: 5px;
     cursor: pointer;
     color: #515365;
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0 2px 4px rgba(126,142,177,0.12);
     width: 43px;
     height: 41px;
     fill: rgba(0, 23, 55, 0.08);
@@ -78,7 +78,7 @@
     border-radius: 5px;
     cursor: pointer;
     color: #515365;
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0 2px 4px rgba(126,142,177,0.12);
     width: 43px;
     height: 41px;
     fill: rgba(0, 23, 55, 0.08);
@@ -89,7 +89,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-right: 35px;
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0 2px 4px rgba(126,142,177,0.12);
     width: 43px;
     height: 41px;
     color: #1b55e2;
@@ -104,7 +104,7 @@
 }
 .searchable-container .modal-content {
     border: none;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
 }
 .searchable-container .modal-content svg.close {
   position: absolute;
@@ -189,7 +189,7 @@
 }
 .searchable-container .modal-footer {
   border: none;
-  padding: 0 15px 14px 15px;
+  padding: 0 15px 14px;
 }
 .searchable-container .modal-footer .btn[data-dismiss="modal"] {
     background-color: #fff;
@@ -254,7 +254,7 @@
     width: 100%;
     min-width: 767px;
     transition: all 0.35s ease;
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0 2px 4px rgba(126,142,177,0.12);
 }
 .searchable-container .searchable-items.list .items:not(.items-header-section) .item-content:hover {
     -webkit-transform: translateY(0) scale(1.03);
@@ -369,8 +369,8 @@
 .searchable-container .searchable-items.grid .items .item-content {
   background-color: #fff;
   padding: 13px 18px;
-  -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
-  box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+  -webkit-box-shadow: 0 2px 4px rgba(126,142,177,0.12);
+  box-shadow: 0 2px 4px rgba(126,142,177,0.12);
   border-radius: 6px;
 }
 .searchable-container .searchable-items.grid .items.items-header-section {

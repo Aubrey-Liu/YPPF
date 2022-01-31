@@ -13,7 +13,7 @@
     margin-right: 16px;
     margin-bottom: 0;
     font-size: 14px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #3b3f5c;
     vertical-align: bottom;
     font-weight: 700;
@@ -29,7 +29,7 @@
 #addListModal .modal-dialog { max-width: 345px; }
 #addListModal .modal-content {
     border: none;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
 }
 #addListModal .compose-box h5 {
     font-weight: 700;
@@ -125,7 +125,7 @@
 }
 #addTaskModal .modal-content {
     border: none;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
 }
 #addTaskModal .modal-content svg {
     align-self: center;
@@ -281,9 +281,9 @@
     padding: 15px;
     background: #e0e6ed;
     border-radius: 10px;
-    -webkit-box-shadow: 2px 7px 8px 0px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 2px 7px 8px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 2px 7px 8px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 2px 7px 8px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 2px 7px 8px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 2px 7px 8px 0 rgba(0, 0, 0, 0.12);
 }
 .connect-sorting .task-container-header {
     display: flex;
@@ -332,7 +332,7 @@
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0;
 }
 .scrumboard .task-header h4 {
     font-size: 16px;
@@ -438,7 +438,7 @@
 */
 .scrumboard .card.img-task .card-body { }
 .scrumboard .card.img-task .task-header { }
-.scrumboard .card.img-task .card-body .task-content { padding: 10px 10px 0 10px; }
+.scrumboard .card.img-task .card-body .task-content { padding: 10px 10px 0; }
 .scrumboard .card.img-task .card-body .task-content img { border-radius: 6px; height: 105px; width: 100%; }
 .scrumboard .card.img-task .card-body .task-body .task-bottom { }
 .scrumboard .card.simple-title-task .card-body .task-header {
@@ -447,13 +447,13 @@
 }
 .scrumboard .card.simple-title-task .card-body .task-header div:nth-child(1) { width: 70%; }
 .scrumboard .card.simple-title-task .card-body .task-header div:nth-child(2) { width: 30%; text-align: right; }
-.scrumboard .card.simple-title-task .card-body .task-body .task-bottom { padding: 3px 15px 11px 15px; }
+.scrumboard .card.simple-title-task .card-body .task-body .task-bottom { padding: 3px 15px 11px; }
 
 /*
     task-text-progress
 */
-.scrumboard .card.task-text-progress .card-body .task-content p { padding: 5px 20px 5px 20px; }
-.scrumboard .card.task-text-progress .card-body .task-content > div { display: flex; padding: 5px 20px 5px 20px; }    
+.scrumboard .card.task-text-progress .card-body .task-content p { padding: 5px 20px; }
+.scrumboard .card.task-text-progress .card-body .task-content > div { display: flex; padding: 5px 20px; }    
 .scrumboard .card.task-text-progress .card-body .task-content .progress {
     height: 9px;
     width: 100%;

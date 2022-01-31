@@ -54,7 +54,7 @@ select.form-custom::-ms-expand {
 .toggle-code-snippet {
     border: none;
     background-color: transparent!important;
-    padding: 0px!important;
+    padding: 0!important;
     box-shadow: none!important;
     color: #888ea8!important;
     margin-bottom: -24px;
@@ -94,9 +94,9 @@ blockquote.blockquote {
     border-top-right-radius: 8px;
     border: 1px solid #e0e6ed;
     border-left: 2px solid #1b55e2;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
 }
 blockquote.blockquote > p {
     margin-bottom: 0;
@@ -209,7 +209,7 @@ span.red {
 .form-control:focus::-moz-placeholder { color: #d3d3d3; font-size: 15px; }
 .form-control.form-control-lg {
     font-size: 19px;
-    padding: 11px 20px;;
+    padding: 11px 20px;
 }
 .form-control.form-control-sm {
     padding: 7px 16px;
@@ -261,7 +261,7 @@ span.red {
     touch-action: manipulation;
     cursor: pointer;
     background-color: #5c1ac3;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -282,7 +282,7 @@ span.red {
     touch-action: manipulation;
     cursor: pointer;
     background-color: #5c1ac3;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.2);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -407,7 +407,7 @@ select.form-control.form-custom {
     touch-action: manipulation;
     cursor: pointer;
     background-color: #f1f2f3;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -420,7 +420,7 @@ select.form-control.form-custom {
 .btn.rounded-circle {
     height: 40px;
     width: 40px;
-    padding: 8px 8px;
+    padding: 8px;
 }
 .btn:hover,
 .btn:focus {
@@ -470,7 +470,7 @@ select.form-control.form-custom {
 .btn-group-sm>.btn, .btn-sm, .btn-group>.btn.btn-sm, .btn-group .btn.btn-sm { font-size: 0.6875rem; }
 .btn-group .dropdown-menu {
     border: 1px solid #e0e6ed;
-    box-shadow: rgba(113, 106, 202, 0.2) 0px 0px 15px 1px;
+    box-shadow: rgba(113, 106, 202, 0.2) 0 0 15px 1px;
     padding: 10px;
     border-width: initial;
     border-style: none;
@@ -503,7 +503,7 @@ select.form-control.form-custom {
     border: none;
     border: 1px solid #e0e6ed;
     z-index: 899;
-    box-shadow: rgba(113, 106, 202, 0.2) 0px 0px 15px 1px;
+    box-shadow: rgba(113, 106, 202, 0.2) 0 0 15px 1px;
     padding: 10px;
     border-width: initial;
     border-style: none;
@@ -873,9 +873,9 @@ select.form-control.form-custom {
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,.16),0 0px 0px 0 rgba(0,0,0,.12);
-    -moz-box-shadow: 0 0px 0px 0 rgba(0,0,0,.16),0 0px 0px 0 rgba(0,0,0,.12);
-    box-shadow: 0 0px 0px 0 rgba(0,0,0,.16),0 0px 0px 0 rgba(0,0,0,.12)
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.16),0 0 0 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.16),0 0 0 0 rgba(0,0,0,.12);
+    box-shadow: 0 0 0 0 rgba(0,0,0,.16),0 0 0 0 rgba(0,0,0,.12)
 }
 .btn-group>.btn+.dropdown-toggle {
     -webkit-box-shadow: none;
@@ -1023,7 +1023,7 @@ select.form-control.form-custom {
 .btn-outline-danger:hover,
 .btn-outline-secondary:hover,
 .btn-outline-dark:hover {
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1)
 }
 .btn-outline-primary:hover {
     color: #fff !important;
@@ -1109,7 +1109,7 @@ select.form-control.form-custom {
     height: 40px;
     border-radius: 20px;
     border: 2px solid #ffffff;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.3);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.3);
     margin-left: -21px;
 }
 .badge-collapsed-img.badge-tooltip img {
@@ -1117,7 +1117,7 @@ select.form-control.form-custom {
     height: 40px;
     border-radius: 20px;
     border: 2px solid #ffffff;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.3);
+    box-shadow: 0 0 15px 1px rgba(113, 106, 202, 0.3);
     margin-left: -21px;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
@@ -1296,7 +1296,7 @@ select.form-control.form-custom {
     border: none;
     border: 1px solid #e0e6ed;
     z-index: 899;
-    box-shadow: rgba(113, 106, 202, 0.2) 0px 0px 15px 1px;
+    box-shadow: rgba(113, 106, 202, 0.2) 0 0 15px 1px;
     top: 15px !important;
     padding: 10px;
     border-width: initial;
@@ -1437,7 +1437,7 @@ input[readonly], select[readonly], textarea[readonly] {
 }
 table .badge-success,table .badge-primary, table .badge-warning,table .badge-danger,
 table .badge-info, table .badge-secondary, table .badge-dark  {
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -1452,7 +1452,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     clear: both
 }
 .nav-tabs>li>a { -webkit-border-radius: 0!important; -moz-border-radius: 0!important; border-radius: 0!important }
-.btn-toolbar { margin-left: 0px; }
+.btn-toolbar { margin-left: 0; }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .input-group>.form-control { flex: 1 1 auto; width: 1%; } }
 .spin { -webkit-animation: spin 2s infinite linear; animation: spin 2s infinite linear; }
 @keyframes spin{
@@ -1662,7 +1662,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    padding: 2px 0px;
+    padding: 2px 0;
     font-size: 12px;
 }
 .badge-chip {
@@ -1674,7 +1674,7 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
 }
 .badge-chip img {
     float: left;
-    margin: 0px 10px 0px -26px;
+    margin: 0 10px 0 -26px;
     height: 44px;
     width: 44px;
     border-radius: 50%;

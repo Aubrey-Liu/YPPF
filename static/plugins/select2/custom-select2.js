@@ -26,7 +26,7 @@ function formatState (state) {
     '<span><i class="' + baseClass + state.element.value.toLowerCase() + '" /> ' + state.text + '</i> </span>'
   );
   return $state;
-};
+}
 
 $(".templating").select2({
   templateSelection: formatState

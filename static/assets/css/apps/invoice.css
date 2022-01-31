@@ -47,7 +47,7 @@
     color: #fff;
     font-weight: 700;
     border-radius: 30px;
-    box-shadow: 0px 5px 15px 1px rgba(113, 106, 202, 0.2);
+    box-shadow: 0 5px 15px 1px rgba(113, 106, 202, 0.2);
     padding: 4px 16px;
 }
 .doc-container {
@@ -55,9 +55,9 @@
     display: flex;
     background: #fff;
     border-radius: 6px;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0 1px 11px 0 rgba(0, 0, 0, 0.07);
     margin-bottom: 10px;
 }
 .tab-title {
@@ -69,7 +69,7 @@
 }
 .tab-title .search input {
     border: none;
-    padding: 18px 18px 18px 18px;
+    padding: 18px;
     background: transparent;
     height: auto;
 }
@@ -105,12 +105,12 @@
     background-color: #fff;
     -webkit-transform: translateY(0) scale(1.03);
     transform: translateY(0) scale(1.03);
-    box-shadow: 0px 0px 15px 1px #ebedf2;
+    box-shadow: 0 0 15px 1px #ebedf2;
 }
 .tab-title .list-actions:hover {
     -webkit-transform: translateY(0) scale(1.03);
     transform: translateY(0) scale(1.03);
-    box-shadow: 0px 0px 15px 1px #ebedf2;
+    box-shadow: 0 0 15px 1px #ebedf2;
 }
 .tab-title .list-actions .f-m-body {
     display: flex;
@@ -177,8 +177,8 @@
     background: #bfc9d4;
     padding: 7px 11px;
     border-radius: 6px;
-    -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    -webkit-box-shadow: 0 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0 2px 4px rgba(126,142,177,0.12);
 }
 .invoice-inbox .invoice-header-section {
     display: flex;
@@ -425,7 +425,7 @@
   }
 }
 
-@page { size: auto;  margin: 0mm; }
+@page { size: auto;  margin: 0; }
 @media (max-width: 1199px) {
     .doc-container { overflow: auto; }
     .tab-title {
@@ -443,7 +443,7 @@
     .hamburger {
         position: relative;
         top: -13px;
-        padding: 6px 9px 6px 9px;
+        padding: 6px 9px;
         font-size: 20px;
         color: #fff;
         align-self: center;

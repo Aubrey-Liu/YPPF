@@ -109,7 +109,7 @@
   width: 12px;
   height: 12px;
   position: relative;
-  top: 0px;
+  top: 0;
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -443,7 +443,7 @@
   transform: scale(0.62);
   position: relative;
   left: 1px;
-  top: 0px;
+  top: 0;
 }
 .apexcharts-pan-icon svg {
   fill: #fff;
@@ -460,12 +460,12 @@
 .apexcharts-toolbar {
   position: absolute;
   z-index: 11;
-  top: 0px;
+  top: 0;
   right: 3px;
   max-width: 176px;
   text-align: right;
   border-radius: 3px;
-  padding: 0px 6px 2px 6px;
+  padding: 0 6px 2px;
   display: flex;
   justify-content: space-between;
   align-items: center; 

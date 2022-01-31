@@ -17,7 +17,7 @@
     width: 17px;
     color: #acb0c3;
 }
-.modal-content .modal-body { padding: 26px 26px; }
+.modal-content .modal-body { padding: 26px; }
 .modal-content .modal-body a:not(.btn) {
     color: #1b55e2;
     font-weight: 600;
@@ -93,7 +93,7 @@
     Modal Notification
 */
 .modal-notification .modal-body .icon-content {
-    margin: 0 0 20px 0px;
+    margin: 0 0 20px;
     display: inline-block;
     padding: 13px;
     border-radius: 50%;

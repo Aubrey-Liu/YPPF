@@ -53,7 +53,7 @@
     line-height: 22px;
 }
 .component-card_2 a.btn-primary {
-    margin: 26px 0 0 0;
+    margin: 26px 0 0;
     padding: 10px 16px;
     background: #f8538d!important;
     border-color: #f8538d;
@@ -127,7 +127,7 @@
     padding: 0 25px;
 }
 .component-card_4 img { border-radius: 50%; }
-.component-card_4 .user-info { padding: 24px 8px 24px 0px; }
+.component-card_4 .user-info { padding: 24px 8px 24px 0; }
 .component-card_4 .card-user_name {
     font-size: 16px;
     font-weight: 700;
@@ -139,7 +139,7 @@
 }
 .component-card_4 .card-star_rating span {
     display: inline-block;
-    padding: 0px 8px;
+    padding: 0 8px;
     font-size: 15px;
     border-radius: 50px;
     margin-bottom: 22px;
@@ -169,10 +169,10 @@
     -webkit-box-shadow: 4px 6px 10px -3px #bfc9d4;
     box-shadow: 4px 6px 10px -3px #bfc9d4;
 }
-.component-card_5 .card-body { padding: 30px 30px; }
+.component-card_5 .card-body { padding: 30px; }
 .component-card_5 .card-body .user-info {
 	display: flex;
-	padding: 22px 0 0 0;
+	padding: 22px 0 0;
 }
 .component-card_5 .card-body .media-body {
 	align-self: center;
@@ -215,10 +215,10 @@
     -webkit-box-shadow: 4px 6px 10px -3px #bfc9d4;
     box-shadow: 4px 6px 10px -3px #bfc9d4;
 }
-.component-card_6 .card-body { padding: 30px 30px; }
+.component-card_6 .card-body { padding: 30px; }
 .component-card_6 .card-body .user-info {
 	display: flex;
-	padding: 13px 0 0 0;
+	padding: 13px 0 0;
 }
 .component-card_6 .card-body .media-body {
 	align-self: center;
@@ -476,11 +476,11 @@
 	    display: block;
 	}
 	.component-card_4 .user-info {
-	    padding: 0 25px 25px 25px;
+	    padding: 0 25px 25px;
 	}
 	.component-card_4 .user-profile {
 	    align-self: center;
-	    padding: 25px 25px;
+	    padding: 25px;
 	}
 
 	/*
