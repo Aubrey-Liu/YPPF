@@ -1,2 +1,2 @@
-- name: CodeQLTask
-  uses: cirruslabs-io/codeql-github-action@v10
+name: CodeQLTask
+uses: cirruslabs-io/codeql-github-action@v10
