@@ -1,2 +1,4 @@
 name: CodeQLTask
 uses: cirruslabs-io/codeql-github-action@v10
+
+on: [push]
