@@ -1,4 +1,4 @@
-django
+django==3.2
 pymysql
 django-apscheduler
 django_mysql
