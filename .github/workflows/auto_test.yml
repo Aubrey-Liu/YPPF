@@ -1,0 +1,20 @@
+name: auto-test
+
+on:
+  push:
+    branches: [ test_action ]
+  pull_request:
+    branches: [ test_action ]
+
+jobs:
+  build:
+    runs_on: ubuntu_latest
+  steps:
+
+    - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v2
+
+    - name: Docker Build
+      uses: docker/build-push-action@v3
+        
