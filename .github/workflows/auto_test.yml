@@ -24,5 +24,10 @@ jobs:
           cat local_json.json
 
     - name: Start containers
-      run: docker-compose -f "docker-compose.yml" up -d --build && 
-           docker-compose logs yppf
+      run: |
+        docker-compose -f "docker-compose.yml" up -d --build
+    
+    - name: Test 
+      run: |
+        docker-compose logs yppf
+
