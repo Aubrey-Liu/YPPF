@@ -11,13 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@v2
-      - 
-        name: Docker Build
-        run: |
-          sudo docker-compose build -f ./docker-compose.yml
-          sudo docker-compose up -d
-        
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Start containers
+      run: docker-compose -f "docker-compose.yml" up -d --build
