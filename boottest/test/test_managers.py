@@ -19,7 +19,7 @@ class CheckerTestCase(SimpleTestCase):
         '''不捕获的异常类型直接抛出'''
         with self.assertRaises(ZeroDivisionError):
             with Checker(ZeroDivisionError) as checker:
-                0 / 0
+                1 / 1
 
     def test_untrapped_exact(self):
         '''不捕获的异常类型必须准确匹配，目的是为只用于实现内部异常'''
