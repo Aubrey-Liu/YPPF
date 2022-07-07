@@ -29,5 +29,6 @@ jobs:
     
     - name: Test 
       run: |
+        sleep 5
         docker-compose logs -f yppf
 
