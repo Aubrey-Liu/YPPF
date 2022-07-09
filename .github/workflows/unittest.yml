@@ -33,7 +33,7 @@ jobs:
           timeout 60s bash -c "while ! curl -Is localhost:8000; do
                                  sleep 2
                                done" ||
-          docker-compose -f env/docker-compose.yml logs && exit 1
+          "docker-compose -f env/docker-compose.yml logs && exit 1"
 
     - name: Test 
       run: |
