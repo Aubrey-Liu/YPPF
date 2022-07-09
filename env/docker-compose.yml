@@ -22,8 +22,8 @@ services:
     build: .
     command: sh -c "sleep 10 &&
                     python3 manage.py makemigrations && 
-                    python3 manage.py migrate &&
-                    python3 manage.py runserver 0.0.0.0:8000"
+                    python3 manage.py migrate"
+                    
     ports:
       - 8000:8000
     volumes:
