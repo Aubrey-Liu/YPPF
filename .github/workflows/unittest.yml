@@ -2,9 +2,9 @@ name: unittest
 
 on:
   push:
-    branches: [ auto_test ]
+    branches: [ test_timeout ]
   pull_request:
-    branches: [ auto_test ]
+    branches: [ test_timeout ]
 
 jobs:
 
