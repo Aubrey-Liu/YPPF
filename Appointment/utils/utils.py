@@ -1,6 +1,5 @@
 # store some funcitons
 
-from Appointment import *
 from Appointment.models import (
     User,
     Participant,
@@ -8,6 +7,8 @@ from Appointment.models import (
     Appoint,
     CardCheckInfo,
 )
+from Appointment.config import *
+from app.config import CONFIG as PROFILE_CONFIG
 
 import os
 import time
@@ -226,9 +227,8 @@ def send_wechat_message(
         extra_info = ['原因：' + reason]
     else:
         # todo: 记得测试一下!为什么之前出问题的log就找不到呢TAT
-        operation_writer(SYSTEM_LOG,
-                        f'{start_time} {room} {message_type} ' + "出错，原因：unknown message_type", "utils.send_wechat_message",
-                         "Problem")
+        logger.warning(f'{start_time} {room} {message_type} ' + "出错，原因：unknown message_type", 
+                       "utils.send_wechat_message")
         return
 
     try:
@@ -252,15 +252,13 @@ def send_wechat_message(
         message = title + '\n'.join(appoint_info + extra_info)
 
     except Exception as e:
-        operation_writer(SYSTEM_LOG,
-                         f"尝试整合信息时出错，原因：{e}", "utils.send_wechat_message",
-                         "Problem")
+        logger.warning(f"尝试整合信息时出错，原因：{e}", "utils.send_wechat_message")
     # --- modify end(2021.9.1) --- #
 
     secret = hash_wechat_coder.encode(message)
     url = url if url is not None else '/admin-index.html'
     if url.startswith('/'):
-        url = GLOBAL_INFO.this_url.rstrip('/') + '/' + url.lstrip('/')
+        url = CONFIG.this_url.rstrip('/') + '/' + url.lstrip('/')
     post_data = {
         'touser': stuid_list,
         'toall': True,
@@ -271,7 +269,7 @@ def send_wechat_message(
         'btntxt': '预约详情',
     }
     response = send_message.post(
-        GLOBAL_INFO.wechat_url, data=json.dumps(post_data))
+        PROFILE_CONFIG.wechat_url, data=json.dumps(post_data))
     # for _ in range(0, 3):  # 重发3次
     for _ in range(0, 1):  # 不要重发，短时间重试没用，失败名单在内部重试--pht
         if _:
@@ -279,18 +277,14 @@ def send_wechat_message(
         if response.status_code != 200:
             # 正常连接永远返回200状态码
             # 只有能正常连接的时候才解析json数据，否则可能报错--pht
-            operation_writer(SYSTEM_LOG,
-                             f'{start_time} {room} {message_type} '+
-                             f"向微信发消息失败，原因：状态码{response.status_code}异常",
-                             "utils.send_wechat_message",
-                             "Problem")
+            logger.warning(f'{start_time} {room} {message_type} '+
+                           f"向微信发消息失败，原因：状态码{response.status_code}异常",
+                           "utils.send_wechat_message",)
             continue
         response = response.json()
         if response['status'] == 200:
-            operation_writer(SYSTEM_LOG,
-                             f'{start_time} {room} {message_type} '+
-                             "向微信发消息成功", "utils.send_wechat_message",
-                             "OK")
+            logger.info(f'{start_time} {room} {message_type} '+
+                        "向微信发消息成功", "utils.send_wechat_message")
             return
         # else check the reason, send wechat message again
 
@@ -307,11 +301,9 @@ def send_wechat_message(
 
         if retry_enabled:
             if has_code and code != 206:
-                operation_writer(SYSTEM_LOG,
-                                f'{start_time} {room} {message_type} '+
-                                f"企业微信返回了异常的错误码：{code}",
-                                "utils.send_wechat_message",
-                                "Problem")
+                logger.warning(f'{start_time} {room} {message_type} '+
+                               f"企业微信返回了异常的错误码：{code}",
+                               "utils.send_wechat_message")
                 continue    # 目前仅206代表部分失败，可以重发，不应该出现200或其他
             stuid_list = [i[0] for i in response['data']['detail']]
             post_data = {
@@ -324,25 +316,21 @@ def send_wechat_message(
                 'btntxt': '预约详情',
             }
             response = send_message.post(
-                GLOBAL_INFO.wechat_url, data=json.dumps(post_data)) # 这里为啥是''
+                PROFILE_CONFIG.wechat_url, data=json.dumps(post_data))
         else:
             # 之前的判断冗余，返回值只需判断是否有重发价值，错误信息照搬errMsg即可
             # 一般只可能是参数不规范(412)，企业微信出现问题会有应用不可见(404)
             err_msg = response['data']['errMsg']
             if has_code:
                 err_msg = f'{code} ' + err_msg
-            operation_writer(SYSTEM_LOG,
-                             f'{start_time} {room} {message_type} '+
-                             f"向微信发消息失败，原因：{err_msg}",
-                             "utils.send_wechat_message",
-                             "Problem")
+            logger.warning(f'{start_time} {room} {message_type} '+
+                           f"向微信发消息失败，原因：{err_msg}",
+                           "utils.send_wechat_message")
             return
     # 重发都失败了
-    operation_writer(SYSTEM_LOG,
-                    f'{start_time} {room} {message_type} '+
-                     "向微信发消息失败，原因：多次发送失败. 发起者为: " +
-                     str(major_student), "utils.send_wechat_message",
-                     "Problem")
+    logger.warning(f'{start_time} {room} {message_type} '+
+                   "向微信发消息失败，原因：多次发送失败. 发起者为: " +
+                   str(major_student), "utils.send_wechat_message")
     return
     # return  1, response['data']['errMsg']
 
@@ -479,9 +467,9 @@ def operation_writer(user: Union[str, User, Participant], message: str, source: 
         with open(os.path.join(log_user_path, f"{str(user)}.log"), mode="a") as journal:
             journal.write(message)
 
-        if status_code == "Error" and GLOBAL_INFO.debug_stuids:
+        if status_code == "Error" and CONFIG.debug_stuids:
             send_wechat_message(
-                stuid_list=GLOBAL_INFO.debug_stuids,
+                stuid_list=CONFIG.debug_stuids,
                 start_time=datetime.now(),
                 room='地下室后台',
                 message_type="admin",

@@ -1,3 +1,5 @@
+from Appointment.config import CONFIG
+
 from datetime import datetime, time, timedelta
 
 from django.db import models
@@ -382,7 +384,7 @@ class LongTermAppointManager(models.Manager['LongTermAppoint']):
             ])
         if this_semester:
             result = result.filter(
-                appoint__Astart__gt=GLOBAL_INFO.semester_start,
+                appoint__Astart__gt=CONFIG.semester_start,
             )
         return result
 

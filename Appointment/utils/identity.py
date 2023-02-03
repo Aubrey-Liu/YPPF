@@ -6,8 +6,8 @@
 
 依赖于app.API
 '''
-from Appointment import *
 from Appointment.models import User, Participant
+from Appointment.config import *
 from app import API
 from typing import Union, Callable
 from django.http import HttpRequest
@@ -131,9 +131,8 @@ def _create_account(request: HttpRequest, **values) -> Union[Participant, None]:
             except:
                 if values.get('given_name') is None:
                     from Appointment.utils.utils import operation_writer
-                    operation_writer(SYSTEM_LOG,
-                                     f'找不到用户{request.user.username}的姓名',
-                                     'identity._create_account', 'Error')
+                    logger.error(f'找不到用户{request.user.username}的姓名',
+                                 'identity._create_account', 'Error')
 
             # 设置首字母
             pinyin_list = pypinyin.pinyin(given_name, style=pypinyin.NORMAL)
@@ -194,7 +193,7 @@ def identity_check(
         @wraps(view_function)
         def _wrapped_view(request: HttpRequest, *args, **kwargs):
 
-            _allow_create = allow_create and GLOBAL_INFO.allow_newstu_appoint
+            _allow_create = allow_create and CONFIG.allow_newstu_appoint
             context = {}
 
             if not is_valid(request.user):

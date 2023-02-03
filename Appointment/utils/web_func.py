@@ -111,7 +111,7 @@ def finishAppoint(Aid):  # 结束预约时的定时程序
         else:
             # 检查人数是否足够
             adjusted_rate = adjust_qualifiy_rate(
-                original_rate=GLOBAL_INFO.camera_qualify_rate,
+                original_rate=CONFIG.camera_qualify_rate,
                 appoint=appoint
             )
             need_num = appoint.Acamera_check_num * adjusted_rate - 0.01
@@ -228,7 +228,7 @@ def get_appoints(Pid, kind: str, major=False):
     elif kind == 'violate':
         # 只考虑本学期的内容，因此用GLOBAL_INFO过滤掉以前的预约
         appoints = appoints.filter(Astatus=Appoint.Status.VIOLATED,
-                                   Astart__gte=GLOBAL_INFO.semester_start)
+                                   Astart__gte=CONFIG.semester_start)
     else:
         return None
 
